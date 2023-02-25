@@ -1,0 +1,137 @@
+.whyus__container{
+    width: 100%;
+    height: 100%;
+    background: var(--navyBlue);
+    padding: 40px;
+}
+
+.whyus__row{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.whyus__content h3{
+    color: var(--paragraphColor);
+    text-align: left;
+}
+
+.whyus__content h2{
+    font-size: var(--h2FontSize);
+    color: white;
+}
+
+.whyus__line{
+    width: 150px;
+    height: 2px;
+    background: var(--buttonColorOrange);
+    margin: 14px;
+    position: relative;
+}
+
+
+.whyus__line::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: white;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    transform: translate(-20%, -55%);
+    rotate: 45deg;
+}
+
+.whyus__content__items{
+    margin-top: 30px;
+    display: grid;
+    gap: 20px;
+    position: relative;
+    color: white;
+}
+
+.whyus__item__one, .whyus__item__two, .whyus__item__three{
+    border: 2px solid var(--buttonColorOrange);
+    padding: 20px 30px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.whyus__item__one{
+    position: relative;
+}
+
+.item__one__number{
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translate(0, -50%);
+    background: var(--navyBlue);
+    font-size: 24px;
+    padding-block: 3px;
+}
+
+.whyus__content__item__one, .whyus__content__item__two, .whyus__content__item__three, .whyus__content__item__four{
+    border: 2px solid white;
+}
+
+.react-player{
+    border: 2px solid white;
+    margin:25px auto;
+}
+
+@media screen and (max-width: 992px){
+    .react-player{
+        width: 750px !important;
+    }
+    .whyus__content h2{
+        font-size: 37px;
+    }
+    .whyus__row{
+        flex-direction: column;
+    }
+
+    .whyus__content h3{
+        text-align: center;
+    }
+
+    .whyus__line{
+        margin: 20px auto;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .react-player{
+        width: 500px !important;
+    }
+
+    .whyus__contentOne{
+        margin-top: 30px;
+    }
+
+    .whyus__content h3{
+        text-align: center !important;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+
+    .whyus__content h2{
+        font-size: var(--smallScreenH2);
+    }
+
+    .react-player{
+        width: 310px !important;
+        height: 230px;
+        margin: auto;
+    }
+
+    .whyus__content h3{
+        text-align: center !important;
+    }
+}

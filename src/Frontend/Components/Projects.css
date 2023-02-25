@@ -1,0 +1,134 @@
+.projects__container{
+    width: 100%;
+    height: 100vh;
+}
+
+.projects__content__one{
+    text-align: center;
+}
+
+.projects__content__one h3{
+    color: var(--paragraphColor);
+}
+
+.projects__content__one h2{
+    font-size: var(--h2FontSize);
+    color: white;
+}
+
+.project__line{
+        width: 150px;
+        height: 2px;
+        background: var(--buttonColorOrange);
+        margin-block: var(--paragraphMarginTop);
+        position: relative;
+        margin: 10px auto 40px;
+}
+    
+.project__line::after{
+        content: "";
+        width: 10px;
+        height: 10px;
+        display: block;
+        background: white;
+        position: absolute;
+        top: 60%;
+        left: 45%;
+        transform: translate(-20%, -55%);
+        rotate: 45deg;
+    }
+
+
+.project__content__two {
+    position: relative;
+    max-width: 1050px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.project__content__two .project__box__one{
+    background: #333;
+    padding: 20px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.project__box__one img ,.project__box__two {
+    position: relative;
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.project__inner__box__one{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.project__inner__box__one h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-size: 25px;
+    opacity: .8;
+    cursor: pointer;
+}
+
+.project__inner__box__one img{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    filter: brightness(20%);
+}
+
+
+
+.project__box__one:nth-child(1){
+    grid-column: span .1;
+}
+.project__box__one:nth-child(2){
+    grid-column: span 1;
+}
+.project__box__one:nth-child(3){
+    grid-column: span 1;
+}
+.project__box__one:nth-child(4){
+    grid-column: span 1;
+}
+
+
+@media screen and (max-width: 992px){}
+
+
+@media screen and (max-width: 768px){
+    
+    .projects__container{
+        height: 100%;
+        margin: 20px 0 50px;
+    }
+
+    #content-two{
+        height: 1200px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+        margin: 10px;
+    }   
+
+
+}

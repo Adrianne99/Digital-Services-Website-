@@ -1,0 +1,128 @@
+.pricing__container{
+    background: var(--navyBlue);
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+}
+
+.pricing__column__one{
+    text-align: center;
+}
+
+.pricing__column__one h3{
+    color: var(--paragraphColor);
+}
+
+.pricing__column__one h2{
+    font-size: var(--h2FontSize);
+    color: white;
+}
+
+.pricing__line{
+    width: 150px;
+    height: 2px;
+    background: var(--buttonColorOrange);
+    margin-block: var(--paragraphMarginTop);
+    position: relative;
+    margin: 10px auto;
+}
+
+.pricing__line::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: white;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    transform: translate(-20%, -55%);
+    rotate: 45deg;
+}
+
+.pricing__column__two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-top: 50px;
+}
+
+.pricing__box__one{
+    height: 450px;
+    width: 330px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+}
+
+.pricing__box__one__image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    object-fit: cover;
+    width: 330px;
+    user-select: none;
+}
+
+.pricing__box__one__image h3{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-90%, -50%);
+    color: white;
+}
+
+.pricing__box__one__image h2{
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    transform: translate(-90%, -60%);
+}
+
+.pricing__services{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    text-align: center;
+    color: white;
+    transform: translate(-27%, -20%);
+}
+
+.pricing__services ul li{
+    list-style: none;
+    width: 330px;
+    text-align: start;
+    margin-block: 15px;
+
+}
+
+.BsCheckLg{
+    color: var(--buttonColorOrange);
+}
+
+.pricing__button button{
+    padding: 14px 54px;
+    background: var(--buttonColorOrange);
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-radius: 20px;
+    border: unset;
+    color: white;
+}
+
+@media screen and (max-width: 992px){
+
+.pricing__container{
+    height: 100%;
+    padding: 50px 0;
+}
+
+.pricing__column__two{
+    flex-direction: column;
+}
+
+}

@@ -1,0 +1,167 @@
+.contact__container{
+  width: 100%;
+  height: 100%;
+  background: #D14522;
+  padding: 100px;
+}
+
+.contact__content__one{
+  margin-left: 110px;  
+}
+
+.contact__row{
+  display: flex;
+}
+
+.telephoneLogo, .emailLogo{
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  color: white;
+  flex-direction: column;
+}
+
+.telephoneLogoOne, .telephoneLogoTwo, .telephoneLogoThree{
+  display: flex;
+  gap: 10px;
+}
+.telephoneText{
+  display: flex;
+  gap: 16px;
+  margin-top: 15px;
+  font-size: 25px;
+}
+
+
+.telephoneText a{
+  color: var(--paragraphColor);
+}
+
+.right-side{
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px;
+}
+
+.spann{
+  color: white;
+}
+
+
+.right-side .input-box{
+    height: 50px;
+    width: 50%;
+    margin: 12px 0;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea
+{
+    height: 100%;
+    width: 500px;
+    border: 1px solid white;
+    padding: 0 10px;
+    background: #333;
+    color: white;
+}
+
+.right-side .message-box{
+    min-height: 110px;
+}
+
+.right-side .input-box textarea{
+    padding-top: 5px;
+    color: white;
+}
+
+.contact__button input{
+    padding: 12px 34px;
+    background: var(--buttonColorOrange);
+    cursor: pointer;
+}
+
+.chat__us, .email__us{
+  margin-top: 15px;
+}
+
+ .telephoneLogo{
+  margin-block: 30px;
+}
+
+.contactContentTwo{
+  display: flex;
+}
+
+.content__container_two{
+  display: flex;
+}
+
+@media screen and (max-width: 992px){
+
+  .contact__container{
+    height: 100vh;
+    position: relative;
+  }
+
+  .contact__content__one h1{
+    display: block;
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    font-size: 20px;
+  }
+
+  .spann{
+    display: block;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-size: 20px;
+  }
+
+  .chat__us{
+    display: flex;
+    position: absolute;
+    top: 0%;
+    right: 10%;
+    margin: inherit;
+    flex-direction: column;
+  }
+
+  .right-side{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+  }
+
+  .telephoneText{
+    margin: -20px 0;
+  }
+}
+
+
+@media screen and (max-width: 768px){
+
+  .chat__us{
+    position: absolute;
+    top: 15%;
+    left: -13%;
+  }
+
+  .right-side{
+    margin: auto;
+  }
+  .input-box input[type="text"] {
+    width: 480px;
+  }
+
+  .input-box input[type="email"] {
+    width: 480px;
+  }
+  
+  .input-box textarea[type="text"] {
+    width: 480px;
+  }
+}
+
